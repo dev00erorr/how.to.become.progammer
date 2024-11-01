@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اساسيات HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* تحسين نوع الخط */
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            font-size: 16px; /* تصغير حجم الخط */
+            line-height: 1.6; /* تحسين تباعد الأسطر */
+            color: #333; /* لون النص */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* ضمان أن الصفحة تمتد لكامل ارتفاع الشاشة */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin: 0;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 32px; /* تصغير حجم عنوان الصفحة */
+        }
+        h2 {
+            font-size: 24px; /* تصغير حجم العناوين الفرعية */
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1; /* يسمح للمحتوى بالتمدد لأخذ المساحة المتبقية */
+        }
+        article {
+            margin-bottom: 40px;
+        }
+        article p, article ul {
+            font-size: 16px; /* تصغير حجم الفقرات والنصوص في القوائم */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px; /* زيادة padding للتذييل */
+            position: relative; /* تغيير إلى relative */
+            width: 100%;
+            font-size: 14px; /* تصغير حجم الخط في التذييل */
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px; /* تصغير حجم الخط في الأكواد */
+            overflow-x: auto; /* لتجنب تجاوز الأكواد حواف الصفحة */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>اساسيات HTML</h1>
+    </header>
+    <main>
+        <article>
+            <h2>مقدمة في HTML</h2>
+            <p>
+                HTML (HyperText Markup Language) هي اللغة الأساسية لبناء صفحات الويب. تُستخدم لوصف هيكل الصفحات باستخدام مجموعة من الوسوم
+                (Tags) التي تُحدد أجزاء الصفحة مثل العناوين، الفقرات، الروابط، الصور، والجداول.
+            </p>
+        </article>
+
+        <article>
+            <h2>وظائف HTML</h2>
+            <ul>
+                <li>إنشاء هيكل صفحات الويب: تُستخدم HTML لتحديد العناصر المختلفة في صفحة الويب مثل النصوص، العناوين، الصور، والروابط.</li>
+                <li>دمج العناصر المتعددة: تساعد HTML في دمج الوسائط مثل الصور والفيديوهات في الصفحات.</li>
+                <li>التفاعل مع CSS وJavaScript: HTML تعمل مع CSS لتنسيق الصفحات وJavaScript لإضافة التفاعلية.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>أهم عناصر HTML</h2>
+            <p>
+                - **العناوين (Headings)**: يتم إنشاء العناوين باستخدام الوسوم <h1> إلى <h6>. <br>
+                - **الفقرات (Paragraphs)**: تُستخدم الفقرات لكتابة النصوص باستخدام الوسم <p>. <br>
+                - **الروابط (Links)**: إنشاء الروابط بين الصفحات باستخدام الوسم <a>. <br>
+                - **الصور (Images)**: إضافة الصور باستخدام الوسم <img>. <br>
+                - **الجداول (Tables)**: إنشاء الجداول باستخدام الوسم <table>.
+            </p>
+        </article>
+
+        <article>
+            <h2>هيكل صفحة HTML</h2>
+            <p>هيكل صفحة HTML يتكون من:</p>
+            <ul>
+                <li>وسم <!DOCTYPE html>: يحدد نوع المستند.</li>
+                <li>وسم <html>: يمثل الجذر الذي يحتوي على جميع عناصر الصفحة.</li>
+                <li>وسم <head>: يحتوي على معلومات وصفية عن الصفحة مثل العنوان وترميز اللغة.</li>
+                <li>وسم <body>: يحتوي على المحتوى المرئي للمستخدم.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>مثال بسيط على HTML</h2>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="ar"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;مثال HTML&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;مرحباً بك في HTML&lt;/h1&gt;
+                    &lt;p&gt;هذا مثال بسيط على صفحة HTML.&lt;/p&gt;
+                    &lt;a href="https://example.com"&gt;اضغط هنا لزيارة موقع خارجي&lt;/a&gt;
+                    &lt;img src="https://via.placeholder.com/150" alt="مثال على صورة"&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+        </article>
+    </main>
+    <footer>
+        <p>© 2024 محمود حسن عون الله - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
